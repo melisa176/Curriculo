@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title><%= title %></title>
+</head>
+<body>
+    <!-- Navegación -->
+    <%- include('partials/navigation')%>
+
+    <section class="projects">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <p>Aquí encontrará algunos de los proyectos personales y de clientes que he creado, y cada proyecto contiene su propio estudio de caso.</p>
+
+            <div class="project-item">
+                <img src="/img/inventory-app.png" alt="Aplicación Móvil para Control de Inventario">
+                <div class="project-details">
+                    <h3>Aplicación Móvil para Control de Inventario</h3>
+                    <p>Una aplicación móvil desarrollada con Kotlin y Firebase que permite gestionar el inventario de productos de una manera fácil y accesible. La aplicación proporciona funcionalidades para escanear códigos de barras y hacer seguimiento de los niveles de stock en tiempo real.</p>
+                    <a href="#caso-inventario" class="case-study-button">Estudio de Caso</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <img src="/img/school-app.png" alt="Aplicación de Gestión de Incidencias para Colegio">
+                <div class="project-details">
+                    <h3>Aplicación de Gestión de Incidencias para Colegio</h3>
+                    <p>Una aplicación móvil para la gestión de incidencias dentro del colegio, desarrollada con Kotlin y Firebase. Permite a los profesores y administradores reportar y hacer seguimiento de incidencias estudiantiles de manera eficiente, garantizando una mejor comunicación y gestión escolar.</p>
+                    <a href="#caso-colegio" class="case-study-button">Estudio de Caso</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <img src="/img/rental-system.png" alt="Sistema de Alquiler en Java">
+                <div class="project-details">
+                    <h3>Sistema de Alquiler en Java</h3>
+                    <p>Un sistema de alquiler desarrollado con Java que permite gestionar el alquiler de propiedades de manera eficaz. El sistema incluye funcionalidades de búsqueda, administración de contratos, y generación de reportes de alquiler.</p>
+                    <a href="#caso-alquiler" class="case-study-button">Estudio de Caso</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

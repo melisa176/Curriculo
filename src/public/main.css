@@ -1,0 +1,249 @@
+/* CSS for Navigation Bar */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #6a0dad, #4b79a1);
+
+    padding: 2.3em 2.5em;
+    color: white;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.profile-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar-center {
+    display: flex;
+    gap: 60px;
+}
+
+.navbar-center a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.navbar-center a:hover {
+    color: #9bcdff; /* Color azul claro al hacer hover */
+}
+
+.navbar-right {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-right a img {
+    width: 45px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-right a:hover img {
+    transform: scale(1.1);
+}
+
+/* About Me Section */
+.about-me {
+    background: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.projects-button {
+    text-decoration: none;
+    background: linear-gradient(to bottom, #6a0dad, #4b79a1);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.projects-button:hover {
+    background-color: #5c0fa6;
+    transform: translateY(-3px);
+}
+
+
+
+/* Skills Section */
+.skills {
+    padding: 20px 20px;
+    text-align: center;
+    color: white;
+}
+
+.skills h2 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.skill-card {
+    background: linear-gradient(to bottom, #6a0dad, #4b79a1);
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.skill-card p {
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+}
+
+/* Utility Classes */
+.container {
+    padding: 0 20px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 40px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.8em;
+    font: weight 500px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.projects p {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Project Item */
+.project-item {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.project-item img {
+    width: 100%;
+    max-width: 200px;
+    object-fit: cover;
+}
+
+.project-details {
+    padding: 30px;
+    text-align: left;
+    flex: 1;
+}
+
+.project-details h3 {
+    font-size: 2em;
+    color: #6a0dad;
+    margin-bottom: 15px;
+}
+
+.project-details p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.case-study-button {
+    text-decoration: none;
+    background-color: #6a0dad;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.case-study-button:hover {
+    background-color: #5c0fa6;
+    transform: translateY(-3px);
+}
