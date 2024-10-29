@@ -1,4 +1,4 @@
-/* CSS for Navigation Bar */
+/* Navigation */
 body {
     margin: 0;
     padding: 0;
@@ -47,7 +47,7 @@ body {
 }
 
 .navbar-center a:hover {
-    color: #9bcdff; /* Color azul claro al hacer hover */
+    color: #9bcdff; 
 }
 
 .navbar-right {
@@ -167,12 +167,11 @@ body {
     color: #ffffff;
 }
 
-/* Utility Classes */
 .container {
     padding: 0 20px;
 }
 
-/* Estilo mejorado para los proyectos */
+/*  proyectos */
 .projects-section {
     background: #ffffff;
     padding: 3em 0;
@@ -217,7 +216,7 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     color: #fff;
-    opacity: 0; /* Inicialmente invisible para la animación */
+    opacity: 0; 
     transform: translateY(30px);
 }
 
@@ -251,10 +250,10 @@ body {
     transform: translateY(-10px);
     box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.3);
 }
-/* Estilo mejorado para la sección de formación */
+/* formación */
 .formacion {
     padding: 20px 0;
-    background: #f7f9fc; /* Fondo ligeramente gris para separar la sección del resto */
+    background: #f7f9fc; 
 }
 
 .container {
@@ -279,7 +278,7 @@ body {
     content: '';
     width: 60px;
     height: 4px;
-    background: #6a11cb; /* Color a juego con la paleta de colores */
+    background: #6a11cb; 
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -290,14 +289,14 @@ body {
 .formacion-item {
     display: flex;
     align-items: center;
-    background: #ffffff; /* Fondo blanco para las tarjetas */
+    background: #ffffff;
     margin: 20px 0;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-    opacity: 0; /* Iniciar con opacidad 0 para animación de desvanecimiento */
-    transform: translateY(20px); /* Posición inicial para animación */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transición suave */
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .icon-container {
@@ -331,7 +330,7 @@ body {
     color: #555;
 }
 
-/* Estilo para las animaciones de fade-in */
+
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
@@ -384,7 +383,7 @@ body {
 }
 
 .contact-info a:hover {
-    color: #9bcdff; /* Efecto de hover en los enlaces */
+    color: #9bcdff; 
 }
 
 .social-icons {
@@ -392,7 +391,7 @@ body {
     padding: 0;
     display: flex;
     gap: 3em;
-    justify-content: left; /* Asegura que los iconos estén centrados */
+    justify-content: left; 
 }
 
 .social-icons li {
@@ -400,13 +399,13 @@ body {
 }
 
 .social-icons li a img {
-    width: 30px;  /* Ajusta el ancho del icono */
-    height: 30px; /* Ajusta la altura del icono */
-    transition: transform 0.3s ease; /* Transición suave para el hover */
+    width: 30px;  
+    height: 30px; 
+    transition: transform 0.3s ease; 
 }
 
 .social-icons li a img:hover {
-    transform: scale(1.1); /* Aumenta ligeramente el tamaño cuando se pasa el mouse */
+    transform: scale(1.1); 
 }
 .footer-right p {
     font-size: 1em;
