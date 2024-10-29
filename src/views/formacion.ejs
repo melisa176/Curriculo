@@ -10,5 +10,70 @@
 <body>
     <!-- Navegación -->
     <%- include('partials/navigation')%>
+
+    <section class="formacion">
+        <div class="container">
+            <h2 class="section-title">Mi Formación</h2>
+            <div class="formacion-item fade-in">
+                <div class="icon-container">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="formacion-content">
+                    <h2>Ingeniería de Sistemas</h2>
+                    <p>Universidad Nacional de Cañete  2022 - actualidad</p>
+                    <p>Especialización en sistemas de información y desarrollo de software.</p>
+                </div>
+            </div>
+            <div class="formacion-item fade-in">
+                <div class="icon-container">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="formacion-content">
+                    <h2>Digital Domain</h2>
+                    <p>Python</p>
+                    <p>Enfoque en análisis de datos y visualización de datos.</p>
+                </div>
+            </div>
+            <div class="formacion-item fade-in">
+                <div class="icon-container">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="formacion-content">
+                    <h2>Digital Domain</h2>
+                    <p>Java Script</p>
+                    <p>HTML, CSS, JavaScript, Node.js, Express y bases de datos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- JavaScript para animaciones -->
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faders = document.querySelectorAll('.fade-in');
+
+            const appearOptions = {
+                threshold: 0.3,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        entry.target.classList.add('visible');
+                        appearOnScroll.unobserve(entry.target);
+                    }
+                });
+            }, appearOptions);
+
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
+        });
+    </script>
+    <%- include('partials/footer') %>
 </body>
 </html>

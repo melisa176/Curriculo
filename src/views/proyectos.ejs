@@ -8,41 +8,62 @@
 </head>
 <body>
     <!-- Navegación -->
-    <%- include('partials/navigation')%>
+    <%- include('partials/navigation') %>
 
-    <section class="projects">
-        <div class="container">
-            <h2>Proyectos</h2>
-            <p>Aquí encontrará algunos de los proyectos personales y de clientes que he creado, y cada proyecto contiene su propio estudio de caso.</p>
-
-            <div class="project-item">
+    <!-- Proyectos Section -->
+    <div class="projects-section">
+        <h2 class="projects-title">Mis proyectos</h2>
+        <div class="projects-grid">
+            <!-- Example Project Card with Descriptions and Icons -->
+            <div class="project-card fade-in">
                 <img src="/img/inventory-app.png" alt="Aplicación Móvil para Control de Inventario">
-                <div class="project-details">
-                    <h3>Aplicación Móvil para Control de Inventario</h3>
-                    <p>Una aplicación móvil desarrollada con Kotlin y Firebase que permite gestionar el inventario de productos de una manera fácil y accesible. La aplicación proporciona funcionalidades para escanear códigos de barras y hacer seguimiento de los niveles de stock en tiempo real.</p>
-                    <a href="#caso-inventario" class="case-study-button">Estudio de Caso</a>
-                </div>
+                <h3>Aplicación Móvil para Control de Inventario</h3>
+                <p>Una aplicación móvil desarrollada con Kotlin y Firebase que permite gestionar el inventario de productos de una manera fácil y accesible. La aplicación proporciona funcionalidades para escanear códigos de barras y hacer seguimiento de los niveles de stock en tiempo real.</p>
             </div>
 
-            <div class="project-item">
-                <img src="/img/school-app.png" alt="Aplicación de Gestión de Incidencias para Colegio">
-                <div class="project-details">
-                    <h3>Aplicación de Gestión de Incidencias para Colegio</h3>
-                    <p>Una aplicación móvil para la gestión de incidencias dentro del colegio, desarrollada con Kotlin y Firebase. Permite a los profesores y administradores reportar y hacer seguimiento de incidencias estudiantiles de manera eficiente, garantizando una mejor comunicación y gestión escolar.</p>
-                    <a href="#caso-colegio" class="case-study-button">Estudio de Caso</a>
-                </div>
+            <!-- Additional Project Card Example -->
+            <div class="project-card fade-in">
+                <img src="/img/rental-system.png" alt="Sistema de Alquiler">
+                <h3>Sistema de Alquiler</h3>
+                <p>Un sistema de alquiler desarrollado con Java que permite gestionar el alquiler de propiedades de manera eficaz. El sistema incluye funcionalidades de búsqueda, administración de contratos, y generación de reportes de alquiler.</p>
             </div>
 
-            <div class="project-item">
-                <img src="/img/rental-system.png" alt="Sistema de Alquiler en Java">
-                <div class="project-details">
-                    <h3>Sistema de Alquiler en Java</h3>
-                    <p>Un sistema de alquiler desarrollado con Java que permite gestionar el alquiler de propiedades de manera eficaz. El sistema incluye funcionalidades de búsqueda, administración de contratos, y generación de reportes de alquiler.</p>
-                    <a href="#caso-alquiler" class="case-study-button">Estudio de Caso</a>
-                </div>
+            <div class="project-card fade-in">
+                <img src="/img/school-app.png" alt="Aplicación de Gestión de Incidencias para un Colegio">
+                <h3>Aplicación de Gestión de Incidencias para un Colegio</h3>
+                <p>Una aplicación móvil para la gestión de incidencias dentro del colegio, desarrollada con Kotlin y Firebase. Permite a los profesores y administradores reportar y hacer seguimiento de incidencias estudiantiles de manera eficiente, garantizando una mejor comunicación y gestión escolar.</p>
             </div>
+
+            <!-- Repeat for each additional project as needed -->
         </div>
-    </section>
+    </div>
 
+    <!-- JavaScript para animaciones -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll('.project-card');
+
+            const appearOptions = {
+                threshold: 0.3,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        entry.target.classList.add('visible');
+                        appearOnScroll.unobserve(entry.target);
+                    }
+                });
+            }, appearOptions);
+
+            cards.forEach(card => {
+                appearOnScroll.observe(card);
+            });
+        });
+    </script>
 </body>
+<%- include('partials/footer') %>
 </html>
